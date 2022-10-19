@@ -11,5 +11,22 @@ window.onload = function() {
     hideResults();
     const age = parseInt(document.querySelector("input#age").value);
     const height = parseInt(document.querySelector("input#height").value);
+    
+    //tower of doom requirements
+    if (age >= 12 && height >= 60) {
+      document.getElementById("swing").removeAttribute("class");
+      document.getElementById("coaster").removeAttribute("class");
+      document.getElementById("tower").removeAttribute("class");
+    //coaster requirements
+    } else if (age >= 12 || height >= 48) { 
+      document.getElementById("swing").removeAttribute("class");
+      document.getElementById("coaster").removeAttribute("class");
+    //swing requirements
+    } else if (age >= 6) {
+      document.getElementById("swing").removeAttribute("class");
+      //catch all else: too short and young
+    } else {
+      document.getElementById("sorry").removeAttribute("class");
+    }
   };
 };
