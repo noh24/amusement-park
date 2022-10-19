@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css" type="text/css">
+  <script src="./js/scripts.js"></script>
+  <title>Amusement Park</title>
+</head>
+<body>
+  <div>
+    <h1>Big Fun</h1>
+
+    <p>Welcome to Big Fun amusement park!</p>
+    <p>At Big Fun you need to be a certain age and height for our rides.</p>
+    <p>Enter your age and height in the form below to see which rides you qualify.</p>
+
+    <form id="userInfo">
+      <label for="age">Age:</label>
+      <input id="age" type="number" name="age">
+      <label for="height">Height:</label>
+      <input id="height" type="number" name="height">
+      <button type="submit">Show me which rides I can ride!</button>
+    </form>
+
+    <div id="swings" class="hidden">
+      <h1>You can ride the Swings.</h1>
+      <p>To ride the Swings, you need to be at least 6 years old.</p>
+    </div>
+    <div id="coaster" class="hidden">
+      <h1>You can ride the Roller Coaster.</h1>
+      <p>You need to be either at least 12 years old or 48 inches.</p>
+    </div>
+    <div id="tower" class="hidden">
+      <h1>You can ride the Tower of Doom.</h1>
+      <p>You need to be at least 12 years old and 60 inches.</p>
+    </div>
+    <div id="sorry" class="hidden">
+      <h1>You are too young or too short! Sorry!</h1>
+      <p>Come back later, shortie!</p>
+    </div>
+  </div>
+</body>
+</html>
